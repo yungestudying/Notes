@@ -1,0 +1,18 @@
+### ddd
+
+##
+### **12.2.7.数据库的重建**
+   
+rpm管理器数据库路径：`/var/lib/rpm/`
+查询操作：通过此处的数据库进行；
+注意：这里的查询是一个广义查询，包括安装，升级，查询，校验和卸载
+
+获取帮助：
+
+    CentOS 6：man rpm
+    CentOS 7：man rpmdb
+    
+格式：`rpm {--initdb|--rebuilddb} [--dbpath DIRECTORY] [--root DIRECTORY]`
+说明：
+    --initdb：初始化数据库
+    --rebuilddb：重新构建，通过读取当前系统上所有已经安装过的程序包进行重新创建；
